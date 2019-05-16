@@ -40,6 +40,29 @@ void bruto2(char *cad);
 
 int main()
 {
+	int g = 0;
+	system("mode 80,15");
+	printf("                              \n\n\n");
+	printf("                                CARGANDO");
+	printf("\n\n\n\n\n               ");
+	char cargando[] = { "||||||||||||||||||||||||||||||||||||||||||" };
+	while (cargando[g] != '\0')
+	{
+		printf("%c", cargando[g]);
+		Sleep(50);
+		g++;
+	}
+	printf("                                 ");
+	printf("\n\n\n%c", 37);
+	for (g = 1; g<101; g++)
+	{
+		printf("\r");
+		printf("                                  %c%d", 37, g);
+		Sleep(70);
+		printf("\r");
+	}
+	system("CLS");
+	ShowWindow(GetConsoleWindow(), SW_MAXIMIZE);
 	system("color 1F");
 	printf("\tMAQUINA ENCRIPTADORA\n\n");
 	menu();
