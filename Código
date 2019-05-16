@@ -58,7 +58,7 @@ int main()
 	{
 		printf("\r");
 		printf("                                  %c%d", 37, g);
-		Sleep(70);
+		Sleep(35);
 		printf("\r");
 	}
 	system("CLS");
